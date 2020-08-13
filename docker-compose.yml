@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  mock-server:
+    build:
+      context: .
+      dockerfile: "Dockerfile"
+    container_name: mock-server
+    command: python3 server.py
+    expose:
+      - "5000"
+    logging:
+      driver: local
+
+  test-runner:
+    build:
+      context: .
+      dockerfile: "Dockerfile"
+    container_name: test-runner
+    command: python3 -m pytest tests -v --html=tests/results/report.html
+    volumes:
+      - ./tests/results:/test_results
