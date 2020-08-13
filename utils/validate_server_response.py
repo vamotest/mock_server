@@ -2,14 +2,16 @@ from utils.validate import validate_schema
 
 
 class ServerResponse:
-
+    """
+    Валидации ответов mock-server к пользователю.
+    """
     @validate_schema
     def validate_create_user(self, data):
         """
         Валидация ответа mock-сервера для ручки `/service/v1/client/create`.
         """
         schema = {
-            'client_id': {"type": "integer"}
+            'client_id': {'type': 'integer'}
         }
         return schema, data
 
@@ -19,7 +21,7 @@ class ServerResponse:
         Валидация ответа mock-сервера для ручки `/service/v1/order/create`.
         """
         schema = {
-            'order_id': {"type": "integer"},
+            'order_id': {'type': 'integer'},
             'order_number': {'type': 'string'}
         }
         return schema, data
@@ -32,10 +34,10 @@ class ServerResponse:
         """
         schema = {
             'items': {
-                "type": "list",
+                'type': 'list',
                 'schema': {
                     'type': 'dict',
-                    "schema": {
+                    'schema': {
                         'item_id': {'type': 'string'},
                         'purchased': {'type': 'boolean'},
                         'last_order_number': {'type': 'string'},
