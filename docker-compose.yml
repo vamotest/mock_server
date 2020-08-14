@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3.3"
 
 services:
   mock-server:
@@ -9,8 +9,6 @@ services:
     command: python3 server.py
     expose:
       - "5000"
-    logging:
-      driver: local
 
   test-runner:
     build:
