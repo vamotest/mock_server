@@ -1,6 +1,6 @@
-# Test task for Voximplant [![Build Status](https://travis-ci.org/vamotest/voximplant)](https://travis-ci.org/vamotest/voximplant)
+# Test task for Voximplant [![Build Status](https://travis-ci.org/vamotest/voximplant.svg?branch=master)](https://travis-ci.org/vamotest/voximplant)
 
-# Index
+## Index
 1. [Technical requirements](#technical-requirements)
 2. [Purchase by client](#purchase-by-client)
 3. [Create client](#create-client)
@@ -12,9 +12,8 @@
 
 **[⬆ Back to Index](#index)**
 ## Technical requirements
-По факту необходимо написать тесты на абстрактную функцию 
-`service/v1/item/purchase/by-client`. Вспомогательные функции, 
-которые могут потребоваться для реализации тестов - 
+Необходимо написать тесты на абстрактную функцию `service/v1/item/purchase/by-client`. 
+Вспомогательные функции, оторые могут потребоваться для реализации тестов - 
 `v1/client/create` и `v1/order/create`.
 
 Сделать на свое усмотрение базовую структуру проекта с тестами и выложить 
@@ -132,8 +131,8 @@ command: python3 -m pytest tests -v --workers auto --tests-per-worker 4 --html=t
 
 **[⬆ Back to Index](#index)**
 ## Test results
-Для просмотра результатов после прогона тестов в контейнере из кореновой директории
-проекта необходимо выполнить:
+Для просмотра результатов после прогона тестов в контейнере
+из корневой директории проекта необходимо выполнить:
 ```shell script
 ~ open tests/results/report.html 
 ```
