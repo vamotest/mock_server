@@ -77,8 +77,8 @@ class TestShowPurchaseItemsId:
 	@pytest.mark.parametrize(
 		'param_item_id', test_data.check_neg_item_ids())
 	def test_client_id_negative(
-			self, param_item_id, create_purchase_client_items_url,
-			user_client_id):
+			self, param_item_id, user_client_id,
+			create_purchase_client_items_url):
 		"""
 		Проверка негативных сценариев сколько раз клиент покупал/не покупал
 		конкретные `item_id` (из запроса), а также пустой `item_id`.
