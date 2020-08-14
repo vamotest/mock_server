@@ -47,8 +47,7 @@ class TestShowPurchaseItemsId:
 	@pytest.mark.parametrize(
 		'item_ids_length', [number for number in range(2, 11, 1)])
 	def test_client_ids_different_length_positive(
-			self, user_client_id, create_purchase_client_items_url,
-			item_ids_length, order_item_id):
+			self, user_client_id, item_ids_length):
 		"""
 		Проверка позитивных сценариев сколько раз клиент покупал/не покупал
 		несколько `item_id` (из запроса).
@@ -61,8 +60,6 @@ class TestShowPurchaseItemsId:
 
 		for item_id in range(item_ids_length):
 			_data['item_ids'].append(str(random.randint(10000, 99999)))
-
-		print(_data)
 
 		count = dict(
 			(x, _data['item_ids'].count(x))
@@ -107,8 +104,7 @@ class TestShowPurchaseItemsId:
 	@pytest.mark.parametrize(
 		'item_ids_length', [number for number in range(2, 10, 2)])
 	def test_client_ids_different_length_negative(
-			self, user_client_id, create_purchase_client_items_url,
-			item_ids_length, order_item_id):
+			self, user_client_id, item_ids_length, order_item_id):
 		"""
 		Проверка негативных сценариев сколько раз клиент покупал/не покупал
 		конкретные `item_id` (из запроса).
