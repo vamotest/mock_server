@@ -18,7 +18,7 @@ class TestOrderPrice:
 			self, param_order_price, create_order_url, user_client_id,
 			user_address, user_phone, order_item_id, order_quantity):
 		"""
-		Проверка позитивных сценариев для введеной цены `item_id`
+		Проверка позитивных сценариев для введенной цены `item_id`
 		при создании заказа.
 		"""
 
@@ -51,7 +51,7 @@ class TestOrderPrice:
 			self, param_order_price, create_order_url, user_client_id,
 			user_address, user_phone, order_item_id, order_quantity):
 		"""
-		Проверка негативных сценариев для введеной цены `item_id`
+		Проверка негативных сценариев для введенной цены `item_id`
 		при создании заказа.
 		"""
 

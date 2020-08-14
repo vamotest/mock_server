@@ -13,7 +13,8 @@ class TestOrderClientId:
 	"""
 	test_data = GenerateTestData()
 
-	@pytest.mark.parametrize('param_client_id', test_data.generate_client_id())
+	@pytest.mark.parametrize(
+		'param_client_id', test_data.generate_client_ids())
 	def test_client_id_positive(
 			self, param_client_id, create_order_url, user_address, user_phone,
 			order_item_id, order_price, order_quantity):
@@ -47,7 +48,7 @@ class TestOrderClientId:
 		server_response.validate_create_order(response)
 
 	@pytest.mark.parametrize(
-		'param_client_id', test_data.check_neg_client_id())
+		'param_client_id', test_data.check_neg_client_ids())
 	def test_client_id_negative(
 			self, param_client_id, create_order_url, user_address, user_phone,
 			order_item_id, order_price, order_quantity):

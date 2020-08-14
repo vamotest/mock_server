@@ -18,7 +18,7 @@ class TestOrderPhone:
 			self, param_phone, create_order_url, user_client_id,
 			user_address, order_item_id, order_price, order_quantity):
 		"""
-		Проверка позитивных сценариев для введеного телефона
+		Проверка позитивных сценариев для введенного телефона
 		при создании заказа.
 		"""
 
@@ -51,7 +51,7 @@ class TestOrderPhone:
 			self, param_phone, create_order_url, user_client_id, user_address,
 			order_item_id, order_price, order_quantity):
 		"""
-		Проверка негативных сценариев для введеного телефона
+		Проверка негативных сценариев для введенного телефона
 		при создании заказа.
 		"""
 

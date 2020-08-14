@@ -18,7 +18,7 @@ class TestClientPhone:
     def test_positive(
             self, param_phone, create_client_url, user_name, user_surname):
         """
-        Проверка позитивных сценариев для введеной телефона.
+        Проверка позитивных сценариев для введенного телефона.
         """
 
         _data = {
@@ -42,7 +42,7 @@ class TestClientPhone:
     def test_negative(
             self, params_phone, create_client_url, user_name, user_surname):
         """
-        Проверка негативных сценариев для введеной номера.
+        Проверка негативных сценариев для введенного номера.
         """
 
         _data = {

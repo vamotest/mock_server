@@ -20,7 +20,7 @@ class TestOrderQuantity:
 			self, param_order_quantity, create_order_url, user_client_id,
 			user_address, user_phone, order_item_id, order_price):
 		"""
-		Проверка позитивных сценариев для введеного количества товаров
+		Проверка позитивных сценариев для введенного количества товаров
 		при создании заказа.
 		"""
 
@@ -54,7 +54,7 @@ class TestOrderQuantity:
 			self, param_order_quantity, create_order_url, user_client_id,
 			user_address, user_phone, order_item_id, order_price):
 		"""
-		Проверка негативных сценариев для введеного количества товаров
+		Проверка негативных сценариев для введенного количества товаров
 		при создании заказа.
 		"""
 
