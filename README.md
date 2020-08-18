@@ -139,7 +139,7 @@ command: python3 -m pytest tests -v --workers auto --tests-per-worker 4 --html=t
 
 **[⬆ Back to Index](#index)**
 ## TODO
-1. More tests;
-2. Add test helpers;
-3. Link DBMS (`in progress`);
-4. Improve mock-server.
+- [ ] More tests;
+- [ ] Add test helpers;
+- [ ] Link DBMS (`in progress`);
+- [ ] Improve mock-server.
