@@ -1,4 +1,4 @@
-# Test task for Voximplant [![Build Status](https://travis-ci.org/vamotest/voximplant.svg?branch=master)](https://travis-ci.org/vamotest/voximplant)
+# Test task [![Build Status](https://travis-ci.org/vamotest/voximplant.svg?branch=master)](https://travis-ci.org/vamotest/voximplant)
 
 ## Index
 1. [Technical requirements](#technical-requirements)
