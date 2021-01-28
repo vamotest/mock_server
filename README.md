@@ -103,8 +103,8 @@
 
 
 **[⬆ Back to Index](#index)**
-## Test run via containers]
-Для запусков тестов в контейнере небходимо иметь предустановленный [Docker](https://www.docker.com/get-started):
+## Test run via containers
+Для запусков тестов в контейнере необходимо иметь предустановленный [Docker](https://www.docker.com/get-started):
 ```shell script
 ~ docker-compose up --abort-on-container-exit
 ```
