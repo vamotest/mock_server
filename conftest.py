@@ -8,7 +8,7 @@ fake = GenerateTestData().fake
 
 
 def format_url(api_url):
-    url = f'http://mock-server:5000/service/v1/{api_url}/'
+    url = f'http://mock-server:5000/service/v1/{api_url}'
     return url.format(api_url)
 
 
