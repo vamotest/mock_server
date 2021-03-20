@@ -58,5 +58,3 @@ class TestClientPhone:
             assert True, f'HTTP Error: {err}'
         except requests.exceptions.ConnectionError:
             assert False, 'ConnectionError'
-
-

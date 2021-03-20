@@ -7,12 +7,17 @@ import pytest
 fake = GenerateTestData().fake
 
 
+def format_url(api_url):
+    url = f'http://mock-server:5000/service/v1/{api_url}'
+    return url.format(api_url)
+
+
 @pytest.fixture()
 def create_client_url():
     """
     Фикстура отдает URL для создания нового клиента.
     """
-    return 'http://mock-server:5000/service/v1/client/create'
+    return format_url('client/create')
 
 
 @pytest.fixture()
@@ -20,7 +25,7 @@ def create_order_url():
     """
     Фикстура отдает URL для создания нового заказа.
     """
-    return 'http://mock-server:5000/service/v1/order/create'
+    return format_url('order/create')
 
 
 @pytest.fixture()
@@ -30,7 +35,7 @@ def create_purchase_client_items_url():
     конкретные `item_id` (из запроса), номер последнего заказа
     и дату его создания.
     """
-    return 'http://mock-server:5000/service/v1/item/purchase/by-client'
+    return format_url('item/purchase/by-client')
 
 
 @pytest.fixture()

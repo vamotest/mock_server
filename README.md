@@ -139,6 +139,10 @@ command: python3 -m pytest tests -v --workers auto --tests-per-worker 4 --html=t
 
 **[⬆ Back to Index](#index)**
 ## TODO
+- [ ] Travis CI -> Github Actions;
+- [ ] Separate the flies from the cutlets (server from the tests);
+- [ ] Fix url paths;
+- [ ] Remove try-except, add assert and xfail pattern;
 - [ ] More tests;
 - [ ] Add test helpers;
 - [ ] Link DBMS (`in progress`);

@@ -2,6 +2,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.git/*
+.DS_Store
+*.sqlite3
 
 # C extensions
 *.so
@@ -128,10 +131,55 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# logs
-/logs/
+sketch
 
-# reports
-/assets/
-/report.html
-/report/
+# Django
+data/
+media/
+upload/
+sent_mails/
+static/admin/
+static/rest_framework/
+
+# Backup files #
+*.bak
+
+# If you are using PyCharm #
+.idea/
+.idea/**/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.xml
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+*.iws /out/
+
+# Distribution / packaging
+.Python build/
+
+# celery
+celerybeat-schedule.*
+
+# Sublime Text #
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# sftp configuration file
+sftp-config.json
+
+# Package control specific files Package
+Control.last-run
+Control.ca-list
+Control.ca-bundle
+Control.system-ca-bundle
+GitHub.sublime-settings

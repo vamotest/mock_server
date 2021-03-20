@@ -7,6 +7,7 @@ class GenerateTestData:
     """
     Класс для получения рандомных и фейковых данных.
     """
+
     def __init__(self):
         self.nationality = [
             'ar_EG', 'bg_BG', 'bs_BA', 'cs_CZ', 'de_DE', 'dk_DK', 'el_GR',

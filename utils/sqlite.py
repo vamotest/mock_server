@@ -13,6 +13,7 @@ class Sqlite:
     """
     Базовый класс для работы с БД.
     """
+
     def __init__(self):
         self.conn = _create_database()
         self.cursor = self.conn.cursor()
@@ -22,6 +23,7 @@ class SqliteCreateUser(Sqlite):
     """
     Наследник класса Sqlite. Отвечает за работу с таблицей `clients`.
     """
+
     def __init__(self):
         super().__init__()
         self._create_table()
@@ -53,6 +55,7 @@ class SqliteCreateOrder(Sqlite):
     """
     Наследник класса Sqlite. Отвечает за работу с таблицей orders.
     """
+
     def __init__(self):
         super().__init__()
         self._create_table()
