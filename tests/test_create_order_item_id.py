@@ -68,10 +68,10 @@ class TestOrderItemId:
         for item_id in range(item_ids_length):
             _data['items'].append({})
             _data['items'][item_id].update({
-                    'item_id': random.randint(10000, 99999),
-                    'price': float(random.randint(100, 1000)),
-                    'quantity': random.randint(1, 20)
-                }
+                'item_id': random.randint(10000, 99999),
+                'price': float(random.randint(100, 1000)),
+                'quantity': random.randint(1, 20)
+            }
             )
 
         items = [item['item_id'] for number, item in enumerate(_data['items'])]
@@ -139,10 +139,10 @@ class TestOrderItemId:
         for item_id in range(item_ids_length):
             _data['items'].append({})
             _data['items'][item_id].update({
-                    'item_id': order_item_id,
-                    'price': float(random.randint(100, 1000)),
-                    'quantity': random.randint(1, 20)
-                }
+                'item_id': order_item_id,
+                'price': float(random.randint(100, 1000)),
+                'quantity': random.randint(1, 20)
+            }
             )
 
         items = [item['item_id'] for number, item in enumerate(_data['items'])]

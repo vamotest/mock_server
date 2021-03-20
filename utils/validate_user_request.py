@@ -18,7 +18,7 @@ class UserRequest:
             'phone': {'type': 'string'}
         }
         return _schema, _data
-    
+
     @validate_schema
     def validate_create_order(self, _data):
         """
@@ -42,7 +42,7 @@ class UserRequest:
             }
         }
         return _schema, _data
-    
+
     @validate_schema
     def validate_client_purchase_item(self, _data):
         """
